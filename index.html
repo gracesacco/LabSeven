@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta 
+    rset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Grace Sacco's Lab Seven</title>
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <link rel="stylesheet" href="style.css" />
+   
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+</head>
+<div class="container">
+
+<h1>Airport Connections</h1>
+<div class="container">
+    <p>Please select how you want the diagram formatted:</p>
+    <form>
+      <label class="radio-inline">
+        <input type="radio" name="selector" value="force" checked>Force
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="selector" value="map">Map
+      </label>
+    </form>
+  </div>
+
+<div id="chart"></div>
+<div id="tooltip" class="hidden">
+  <p><span id="value"></span></p>
+</div>
+</div>
+</html> 
